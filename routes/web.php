@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $school = "Boolean";
-    return view('home', ['school'=>$school]);
+    $stato = "Allegro";
+    $meteo = "Sereno";
+    return view('home', compact('school', 'stato', 'meteo'));
 });
