@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $school = "Boolean";
+    return view('home', ['school'=>$school]);
 });
